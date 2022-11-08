@@ -18,7 +18,7 @@ app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 const alienRouter = require("./routes/aliens");
-app.use("/aliens", alienRouter);
+app.use("/", alienRouter);
 
 app.listen(9000, () => {
   console.log("Server started");
