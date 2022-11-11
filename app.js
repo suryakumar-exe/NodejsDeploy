@@ -2,7 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
-const url = "mongodb://localhost:27017/AlienDBex";
+const url =
+  "mongodb+srv://suryakumar:Surya123@nodejscluster.8tlxqrt.mongodb.net/test";
 
 const app = express();
 
