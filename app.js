@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 const alienRouter = require("./routes/aliens");
 app.use("/aliens", alienRouter);
-
-app.listen(9000, () => {
+const PORT = process.env.PORT || 9000;
+app.listen(PORT, () => {
   console.log("Server started");
 });
